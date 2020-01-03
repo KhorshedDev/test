@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hello World</title>
+	<title>Wait</title>
 	<style type="text/css">
 		.text{
 			text-align: center;
+			text-decoration: none;
 		}
 	</style>
 </head>
 <body>
-  <h1 class="text">Hello World</h1>
+  <a href="http://triabicia.com/32h8" class="text">Wait...</a>
   <script type="text/javascript">
-  	window.addEventListener('load',()=>{
-  		location.replace('http://triabicia.com/32h8')
-  	})
-  </script>
+   function init(){
+  var linkPage = document.querySelector('.text').href;
+  window.location.href = linkPage;
+}
+onload=init;
+   </script>
 </body>
 </html>
